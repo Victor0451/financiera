@@ -16,7 +16,7 @@ const app = express();
 app.use(morgan("dev"));
 
 app.use(cors());
-app.set("port", process.env.PORT || 4001);
+app.set("port", process.env.PORT || 5000);
 
 // const options = {
 //   key: fs.readFileSync(path.resolve(__dirname, "./clubwerchow.com.key")),

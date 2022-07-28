@@ -8,9 +8,7 @@ import moment from 'moment';
 import { confirmAlert } from 'react-confirm-alert';
 import { useRouter } from 'next/router'
 import FormCobranzaCreditos from '../../components/cobranza/FormCobranzaCreditos';
-import ModalRegistrarCobranza from '../../components/cobranza/ModalRegistrarCobranza';
 import { registrarHistoria } from '../../utils/funciones'
-import { total } from 'react-big-calendar/lib/utils/dates';
 
 const Cobranza = () => {
 
@@ -276,24 +274,6 @@ const Cobranza = () => {
                 eliminarPagoPrecargado={eliminarPagoPrecargado}
                 totalPagosPrecargados={totalPagosPrecargados}
                 registrarPagosCredito={registrarPagosCredito}
-
-            />
-
-            <ModalRegistrarCobranza
-                credito={credito}
-                cuoPag={cuoPag}
-                cobranza={cobranza}
-                preCargarCobranza={preCargarCobranza}
-                nupagos={nupagos}
-                montoRef={montoRef}
-                cuotaRef={cuotaRef}
-                metodoCobranzaRef={metodoCobranzaRef}
-                descripcionRef={descripcionRef}
-                limpiarPrePagos={limpiarPrePagos}
-                eliminarPagoPrecargado={eliminarPagoPrecargado}
-                totalPagosPrecargados={totalPagosPrecargados}
-                registrarPagosCredito={registrarPagosCredito}
-                totalCobranza={totalCobranza}
 
             />
 

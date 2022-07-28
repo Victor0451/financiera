@@ -4,12 +4,22 @@
     "description": "Sistema de Gestion Financiera",
     "main": "index.js",
     "scripts": {
-        "client-install": "npm install --prefix client",
-        "start": "cross-env NODE_ENV=production node server.js",
+        "client-install": "cd front/ && npm install",
+        "server-install": "cd back/ && npm install",       
+                
         "server": " cd back/ && npm run dev",
         "client": " cd front/ && npm run dev ",
-        "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "build": "npm run build --prefix client"
+        
+        "serverB": " cd back/ && npm run start",
+        "clientB": " cd front/ && npm run build ",
+
+        "serverStart": " cd back/ && npm run start -p 5000",
+        "clientStart": " cd front/ && npm run start -p 3000",
+
+        "dev": "concurrently \"npm run server\" \"npm run client\"",        
+        "build": "concurrently \"npm run client-install\" \"npm run server-install\" \"npm run clientB\"",
+        "start": "concurrently \"npm run serverStart\" \"npm run clientStart\""
+
     },
     "author": "Ing. Longo Victor Manuel <victor.m.longo@gmail.com>",
     "license": "MIT",
