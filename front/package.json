@@ -1,0 +1,40 @@
+{
+  "name": "financiera-front",
+  "version": "0.6.2",
+  "description": "Sistema Fincanciero (Frontend)",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.4",
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "axios": "^0.24.0",
+    "elementz": "^2.0.5",
+    "framer-motion": "^6.5.1",
+    "js-cookie": "^3.0.1",
+    "match-sorter": "^6.3.1",
+    "moment": "^2.29.1",
+    "next": "^12.2.2",
+    "react": "^18.0.0",
+    "react-big-calendar": "^0.38.1",
+    "react-confirm-alert": "^2.7.0",
+    "react-data-table-component": "^7.4.5",
+    "react-dom": "^18.0.0",
+    "react-table": "^7.7.0",
+    "styled-components": "^5.3.3",
+    "toastr": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7"
+  },
+  "author": "Ing. Longo Victor Manuel <victor.m.longo@gmail.com>"
+}

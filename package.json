@@ -1,0 +1,25 @@
+{
+    "name": "financiera",
+    "version": "1.0",
+    "description": "Sistema de Gestion Financiera",
+    "main": "index.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "cross-env NODE_ENV=production node server.js",
+        "server": " cd back/ && npm run dev",
+        "client": " cd front/ && npm run dev ",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "build": "npm run build --prefix client"
+    },
+    "author": "Ing. Longo Victor Manuel <victor.m.longo@gmail.com>",
+    "license": "MIT",
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+    ],
+    "dependencies": {
+        "concurrently": "^7.3.0",
+        "react-icons": "^4.4.0"
+    }
+}
