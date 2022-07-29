@@ -18,7 +18,7 @@
         "clientStart": " cd front/ && npm run start -p 3000",
 
         "dev": "concurrently \"npm run server\" \"npm run client\"",        
-        "build": "concurrently \"npm run client-install\" \"npm run server-install\" \"npm run clientB\"",
+        "build": "concurrently \"npm run clientB\" --output public",
         "start": "concurrently \"npm run serverStart\" \"npm run clientStart\""
 
     },
