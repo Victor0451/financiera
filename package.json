@@ -6,6 +6,7 @@
     "scripts": {
         "client-install": "cd front/ && npm install",
         "server-install": "cd back/ && npm install",       
+        "financiera-install": "npm install",       
                 
         "server": " cd back/ && npm run dev",
         "client": " cd front/ && npm run dev ",
